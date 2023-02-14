@@ -18,3 +18,28 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+li {
+  font-size: 20px;
+  list-style: none;
+}
+.flag-img {
+  margin-right: 15px;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.info-heading {
+  font-size: 35px;
+}
+
+.info-name {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.info-item {
+  font-weight: 400;
+}

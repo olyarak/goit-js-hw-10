@@ -53,12 +53,12 @@ function renderCountryInfo({ flags, name, capital, population, languages }) {
   const languagesString = languages.map(language => language.name).join(', ');
 
   return `
-  <img class='flag-img' src='${flags.svg}' alt='${name}' width='30' />
+  <div class="box"><img class='flag-img' src='${flags.svg}' alt='${name}' width='30' />
+  <h2 class="info-heading">${name}</h2></div>
   <ul>
-  <li>${name}</li>
-   <li><span class="info-name">Capital:<span>${capital}</li>
-    <li><span class="info-name">Population:<span>${population}</li>
-     <li><span class="info-name">Languages:<span>${languagesString}</li>
+   <li class="info-item"><span class="info-name">Capital:</span>${capital}</li>
+    <li class="info-item"><span class="info-name">Population:</span>${population}</li>
+     <li class="info-item"><span class="info-name">Languages:</span>${languagesString}</li>
   </ul>`;
 }
 
